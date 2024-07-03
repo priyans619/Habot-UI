@@ -21,7 +21,25 @@ const Section1 = () => {
         </h2>
       </div>
 
-      
+      <div className="flex flex-col sm:flex-row justify-center items-center mt-5 mb-5 gap-4 sm:w-full lg:w-4/5 xl:w-3/5">
+        <input
+          type="text"
+          className="w-full sm:w-80 h-14 border border-gray-300 rounded-md px-4 text-gray-800 font-inter font-bold text-base text-center"
+          placeholder="Search your required service here"
+        />
+        <input
+          type="text"
+          className="w-full sm:w-80 h-14 border border-gray-300 rounded-md px-4 text-gray-800 font-inter font-bold text-base text-center mt-4 sm:mt-0"
+          placeholder="Search your desired location here"
+        />
+        <Button btnType="button" title="Search" />
+      </div>
+
+
+      <h2 className="text-xl text-white mt-2 mb-16 text-center">
+        <span className="font-bold block">Are you a buyer?</span>
+        <span className="underline font-normal block mt-2">Click here if you are looking to post a requirement</span>
+      </h2>
 
     </div>
   );
